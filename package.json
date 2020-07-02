@@ -1,16 +1,30 @@
 {
   "name": "conduit-rest",
-  "version": "0.0.0",
-  "private": true,
+  "version": "1.0.0",
+  "description": "a rest api for blogs",
+  "main": "index.js",
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "nodemon ./bin/www",
+    "play": "node ./bin/www",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abinash393/conduit-rest.git"
+  },
+  "author": "abinash panda",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Abinash393/conduit-rest/issues"
+  },
+  "homepage": "https://github.com/Abinash393/conduit-rest#readme",
   "dependencies": {
-    "cookie-parser": "~1.4.4",
-    "debug": "~2.6.9",
-    "express": "~4.16.1",
-    "http-errors": "~1.6.3",
-    "jade": "~1.11.0",
-    "morgan": "~1.9.1"
+    "bcrypt": "^5.0.0",
+    "cookie-parser": "^1.4.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.21",
+    "morgan": "^1.10.0"
   }
 }
